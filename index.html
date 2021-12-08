@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SEGUNDO PARCIAL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/indexJ.css">
+
+<body>
+     <h1>DATOS DE XML Y JSON</h1>
+    <div class="contenedor">
+        <div class="texto" id="texto">
+       
+        <button class="CargarDatos" id="CargarDatos">Cargar Datos XML</button>
+        
+        <table id="demo"></table>
+        <div class="seleccion">
+            <h2>Seleccione un estudiante</h2>
+            <div>
+              <select name="estudiante" id="estudiante" class="select">
+                <option value="vacio">--Seleccione una opcion--</option>
+                <option value="Karen Graciela Torres Mero">Karen Torres</option>
+                <option value="Bryan Antonio Pin Tinitana">Bryan Pin</option>
+                <option value="Myckel Hoover Samaniego Arambulo">Hoover Samaniego</option>
+                <option value="Nicole Maria Pionce Cedeño">Nicole Pionce</option>
+                <option value="Kelvin Manuel Quijije Lopez">Kelvin Quijije</option>
+                <option value="Joel Enrique Moreira Molina">Joel Moreira</option>
+                <option value="Maria Odalys Cevallos Pico">Odalys Cevallos</option>
+                <option value="Cecilia Estefania Garcia Santana">Cecilia Garcia</option>
+                <option value="Ahinoa Thais Figueroa Torres">Ahinoa Figueroa</option>
+                <option value="Myriam Cecilia Mero Franco">Myriam Mero</option>
+              </select>
+              <button  onclick="conectarXMLMostrar()" class="btnB">buscar</button>
+            </div>
+          </div>
+          <div>
+            <h2 class="infor">Información del estudiante</h2>
+          </div>
+          <table class="data" id="data" ,cellspacing="20" cellpadding="10" border="3" bordercolor="green"></table>
+    </div>
+    <div class="container">
+        <div class="section">
+            <button class="btn" id="boton">Cargar Datos json</button>
+            <table id="buscar" align="center" border="4" bordercolor="green"
+            cellpadding="0" cellspacing="0" style="display: none;">
+                <thead>
+                  <tr>
+                    <th bgcolor="yellow">Apellidos</th>
+                    <th bgcolor="yellow">Nombres</th>
+                    <th bgcolor="yellow">Semestre</th>
+                    <th bgcolor="yellow">Paralelo</th>
+                    <th bgcolor="yellow">Direccion</th>
+                    <th bgcolor="yellow">Telefono</th>
+                    <th bgcolor="yellow">Correo</th>
+                </tr>
+                </thead>
+                <tbody id="res">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="seleccion">
+            <p>Seleccione el estudiante</p>
+            <div class="consulta">
+              <button onclick="consultarData('Karen Graciela','Torres Mero')">Karen Torres</button>
+              <button onclick="consultarData('Bryan Antonio','Pin Tinitana')">Bryan Pin</button>
+              <button onclick="consultarData('Myckel Hoover','Samaniego Arambulo')">Hoover Samaniego</button>
+              <button onclick="consultarData('Nicole Maria','Pionce Cedeño')">Nicole Pionce</button>
+              <button onclick="consultarData('Kelvin Manuel','Quijije Lopez')">Kelvin Lopez</button>
+              <button onclick="consultarData('Joel Enrique','Moreira Molina')">Joel Molina</button>
+              <button onclick="consultarData('Maria Odalys','Cevallos Pico')">Odalys Cevallos</button>
+              <button onclick="consultarData('Cecilia Estefania','Garcia Santana')">Cecilia Garcia</button>
+              <button onclick="consultarData('Ahinoa Thais','Figueroa Torres')">Ahinoa Figueroa</button>
+              <button onclick="consultarData('Myriam Cecilia','Mero Franco')">Myriam Mero</button>
+            </div>
+          </div>
+          <div class="seccion_est">
+            <h2>Informacion del Estudiante</h2>
+            <div id="datos" class="seccion-datos"></div>
+          </div>
+    </div>
+
+    </div>
+    
+     
+    <script src="indexJ.js"></script>
+    <script src="indexML.js"></script>
+
+</body>
+</html>
